@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10;      // Khai báo biến a
+    int *ptr = &a;   // Khai báo con trỏ ptr trỏ tới a
+
+    printf("Gia tri cua a: %d\n", a);        // In giá trị a
+    printf("Dia chi cua a: %p\n", &a);       // In địa chỉ của a
+    printf("Gia tri qua con tro: %d\n", *ptr); // In giá trị thông qua con trỏ
+
+    *ptr = 20;       // Thay đổi giá trị của a thông qua con trỏ
+    printf("Gia tri cua a sau khi thay doi: %d\n", a);
+
+    return 0;
+}
